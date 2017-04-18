@@ -1,14 +1,20 @@
-var http = require('http'),
-    fs = require('fs');
+const express = require('express');
+const fs = require('fs');
+const hostname = '127.0.0.1';
+const port = 8000;
+const app = express();
 
+let cache = [];// Array is OK!
+cache[0] = fs.readFileSync( __dirname + '/index.html');
 
-fs.readFile('./index.html', function (err, html) {
-    if (err) {
-        console.log(err);
-    }       
-    http.createServer(function(request, response) {  
-        response.writeHeader(200, {"Content-Type": "text/html"});  
-        response.write(html);  
-        response.end();  
-    }).listen(8000);
+app.get('/', (req, res) => {
+    res.setHeader('Content-Type', 'text/html');
+    res.send( cache[0] );
+});
+
+app.listen(port, () => {
+    console.log(`
+        Server is running at http://${hostname}:${port}/ 
+        Server hostname ${hostname} is listening on port ${port}!
+    `);
 });
