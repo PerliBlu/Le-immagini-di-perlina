@@ -4,12 +4,11 @@ const hostname = '127.0.0.1';
 const port = 8000;
 const app = express();
 
-let cache = [];// Array is OK!
-cache[0] = fs.readFileSync( __dirname + '/index.html');
+var cache = fs.readFileSync( __dirname + '/index.html');
 
 app.get('/', (req, res) => {
     res.setHeader('Content-Type', 'text/html');
-    res.send( cache[0] );
+    res.send( cache );
 });
 
 app.listen(port, () => {
