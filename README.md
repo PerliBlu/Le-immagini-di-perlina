@@ -20,11 +20,11 @@ After you got your account, login and click *apps* option, then *create app*. Yo
 
 #### Deployment method
 
-Heroku Git: Use Heroku CLI, to use this option you need to follow [Heroku's started guide](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up).
+*Heroku Git*: Use Heroku CLI, to use this option you need to follow [Heroku's started guide](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up).
 
-GitHub: Connect your GitHub repo with Heroku. This is the easier one, first, you need to grant Heroku access, then select the repo and branch to deploy. 
+*GitHub*: Connect your GitHub repo with Heroku. This is the easier one, first, you need to grant Heroku access, then select the repo and branch to deploy. 
 
-Dropbox: Use your source code stored in Dropbox.
+*Dropbox*: Use your source code stored in Dropbox.
 
 ![heroku-deployment_sources](rsc/heroku-deployment_sources.png)
 
