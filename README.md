@@ -8,6 +8,7 @@ Heroku is a cloud Platform-as-a-Service (PaaS) supporting several programming la
 
 #### Create New App
 First you need to create an account on [Heroku](https://www.heroku.com/), It's free so go ahead an try!. Login then go to apps option, now we click create app button. You only need an App Name and a region to deploy the App. Currently are USA and Europe runtime regions.
+
 ![heroku-create_app](rsc/heroku-create_app.png)
 
 ### Deploy
@@ -16,6 +17,7 @@ First you need to create an account on [Heroku](https://www.heroku.com/), It's f
 Heroku Git: Use Heroku CLI, to use this option you need to follow [Heroku's started guide](https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up).
 GitHub: Connect your GitHub repo with Heroku. This is the easier one, first, you need to grant Heroku access, then select the repo and branch to deploy. 
 Dropbox: Use your source code storage in Dropbox.
+
 ![heroku-deployment_sources](rsc/heroku-deployment_sources.png)
 
 #### GitHub
@@ -26,6 +28,7 @@ Enables a chosen branch to be automatically deployed. Very useful if you have a 
 
 #### Manual deploy
 Deploy the current state of your selected App's branch.
+
 ![heroku-manual_deploy](rsc/heroku-manual_deploy.png)
 
 ### Build Log
@@ -56,8 +59,8 @@ Very useful tool to follow your App's building.
        Released v22
        https://twogg-nodejs.herokuapp.com/ deployed to Heroku
 ```
+
 ![heroku-build_log](rsc/heroku-build_log.png)
 
 More Info and references:
-[Heroku's About page](https://www.heroku.com/about)
-[Wikipedia](https://en.wikipedia.org/wiki/Heroku)
+[Heroku's About page](https://www.heroku.com/about) and [Wikipedia](https://en.wikipedia.org/wiki/Heroku).
