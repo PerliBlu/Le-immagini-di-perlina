@@ -1,11 +1,12 @@
 {
-  "name": "hello-word",
+  "name": "hello-world",
   "description": "Our sample Node to Heroku app",
-  "main": "hello-word.js",
+  "main": "hello-world.js",
   "scripts": {
-    "start": "node hello-word.js"
+    "start": "node hello-world.js"
   },
   "dependencies": {
-    "express": "4.9.8"
+    "ejs": "2.5.6",
+    "express": "4.15.2"
   }
 }
