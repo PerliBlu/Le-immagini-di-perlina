@@ -4,6 +4,7 @@ const hostname = '127.0.0.1';
 const port = 8000;
 const app = express();
 
+
 var cache = fs.readFileSync( __dirname + '/index.html');
 
 app.get('/', (req, res) => {
