@@ -6,7 +6,6 @@
     "start": "node hello-word.js"
   },
   "dependencies": {
-    "fs": "7.9.0",
     "express": "4.9.8"
   }
 }
